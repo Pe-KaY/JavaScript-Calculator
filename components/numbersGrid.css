@@ -1,0 +1,45 @@
+#numbers-grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* buttons styling starts here */
+button {
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  outline: 1px solid black;
+}
+button:hover {
+  color: black;
+  outline: 1px solid rgb(124, 120, 120);
+  transform: scale(0.99);
+}
+/* buttons styling endss here */
+
+/* individual buttons styling starts here */
+button:not(.numbers) {
+  background-color: rgb(102, 102, 102);
+}
+#clear {
+  grid-column: 1 / span 2;
+  background-color: rgb(172, 57, 57);
+}
+
+.numbers {
+  background-color: #4d4d4d;
+}
+#zero {
+  grid-row: 5/6;
+  grid-column: 1 / span 2;
+}
+#equals {
+  grid-row: 4/6;
+  grid-column: 4/5;
+  background-color: rgb(0, 68, 102);
+}
+#decimal {
+  background-color: #4d4d4d;
+}
+/* individual buttons styling ends here */
